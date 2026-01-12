@@ -23,7 +23,5 @@ Each script is intentionally small and focused, reflecting how bioinformatics ta
 often built as composable utilities.
 
 Future improvements include:
-- Input validation and edge-case handling
-- Unit tests for each module
 - CLI argument parsing
 
