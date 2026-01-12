@@ -18,6 +18,8 @@ Python • Regex • FASTA • BLAST • File Parsing • Basic Bioinformatics P
 - `trinucleotide_frequencies.py` – Computes background frequencies of trinucleotides
 - `fasta_header_parser.py` – Parses FASTA headers for metadata
 - `blast_parser.py` – Extracts key fields from BLAST results
+- `restriction_enzyme_cuts.py` – Reads FASTA sequences and a restriction enzyme library to identify which enzymes cut each sequence and report cut positions
+
 
 Each script is intentionally small and focused, reflecting how bioinformatics tasks are
 often built as composable utilities.
