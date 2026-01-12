@@ -1,7 +1,7 @@
 # Sequence Parsing Toolkit
 
 A small collection of Python utilities for common bioinformatics text-processing tasks,
-originally developed during my M.S. in Biotechnology (Bioinformatics).
+originally developed during my M.S. in Biotechnology (Bioinformatics) and refined thereafter.
 
 These scripts demonstrate:
 - FASTA and BLAST output parsing
