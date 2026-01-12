@@ -21,6 +21,8 @@ Python • Regex • FASTA • BLAST • File Parsing • Basic Bioinformatics P
 - `restriction_enzyme_cuts.py` – Reads FASTA sequences and a restriction enzyme library to identify which enzymes cut each sequence and report cut positions
 
 - `FastaCollector.java` – Interactive Java program that collects clone IDs and DNA sequences from user input, writes them to disk in FASTA format, and echoes all entries upon exit
+- `WordCounter.java` – Java program that counts words in a text file and outputs a sorted frequency table of unique tokens
+
 
 
 
