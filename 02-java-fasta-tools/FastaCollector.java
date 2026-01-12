@@ -1,6 +1,4 @@
 /*
-   Final Exam Q33 (Refactored)
-   Name: FastaCollector.java
    Author: Nichole Cubbage
    Original Date: 10/16/2020
  */
