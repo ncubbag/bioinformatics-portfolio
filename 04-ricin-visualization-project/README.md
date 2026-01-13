@@ -1,12 +1,12 @@
 # Ricin Protein Timeline Visualization (Group Project)
 
-This project models a biological timeline of ricin protein trafficking and molecular relationships using a SQLite-backed dataset and a Plotly-based visualization approach. It explores how complex, time-dependent biological processes can be rendered as an interactive, interpretable timeline—where entities move, bind, contain, and transform over time.
+This project aimed to model a biological timeline of ricin protein trafficking and molecular relationships using a SQLite-backed dataset and a Plotly-based visualization approach. It explored how complex, time-dependent biological processes can be rendered as an interactive, interpretable timeline—where entities move, bind, contain, and transform over time.
 
-The design goal is to move beyond static network diagrams by introducing *temporal structure*, *containment*, and *biological semantics* into the visualization itself.
+The design goal was to move beyond static network diagrams by introducing *temporal structure*, *containment*, and *biological semantics* into the visualization itself.
 
 ---
 
-## What it does
+## What it does/aimed to do
 - Loads entities and relationships from a SQLite database
 - Assigns vertical “lane” positions for entities based on size and containment
 - Builds Plotly scatter traces that render entities as rectangles over time
