@@ -1,6 +1,6 @@
 # Bioinformatics Portfolio
 
-This is a curated collection of programming and data projects completed during my M.S. in Biotechnology with a specialization in Bioinformatics and refined thereafter. Together, these projects reflect how biological data is parsed, modeled, structured, and ultimately interpreted through software.
+This is a curated collection of programming and data projects completed during my M.S. in Biotechnology with a specialization in Bioinformatics and refined thereafter. 
 
 ---
 
@@ -80,29 +80,33 @@ This project demonstrates:
 
 ## 4. Ricin Protein Timeline Visualization (Group Project)
 
-A systems-biology visualization project modeling the intracellular trafficking and interactions of the Ricin toxin over time. The project bridges **SQL → SQLite → Python → Plotly**, transforming relational biological data into an interactive timeline where entities move, bind, contain, and persist across time.
+An experimental bioinformatics visualization project modeling the intracellular trafficking and
+molecular relationships of the Ricin protein over time. The project combines a SQLite-backed dataset
+with a Plotly-based rendering engine to represent biological entities as temporal “lanes” that move,
+bind, contain, and transform.
 
-This work explores how complex, time-dependent biological processes can be rendered beyond static network diagrams by introducing:
+### Core Files
+
+- `database.sql`  
+  Defines and populates the SQLite schema for biological entities and their relationships, including
+  temporal attributes and semantic relationship types (e.g., *Contains*, *Traffic*). This file
+  encodes the biological model that drives the visualization.
+
+- `ricin_visualization.py`  
+  Implements the visualization engine:
+  - Computes containment-aware vertical sizing for entities  
+  - Assigns non-overlapping vertical positions along the y-axis  
+  - Generates Plotly scatter traces that render entities as rectangles over time  
+  - Supports both moving (trafficking) and nonmoving entities  
+
+The design goal was to move beyond static network diagrams by introducing:
 
 - Temporal structure  
-- Vertical “lanes” based on size and containment  
-- Nested biological entities  
-- Dynamic movement across cellular compartments  
-
-### Key Features
-- Loads entities and relationships from a SQLite database  
-- Computes containment-aware vertical heights for composite entities  
-- Assigns initial Y-axis positions to create clear, non-overlapping lanes  
-- Renders entities as rectangle-like paths in Plotly using scatter traces  
-- Supports:
-  - Moving entities (e.g., trafficking events)
-  - Nonmoving entities (persistent structures)
-  - Nested containment (entities within entities)
+- Nested containment  
+- Semantic biological relationships  
 
 This project demonstrates:
-- Translating biological semantics into data structures  
-- Integrating SQL with Python for downstream analysis  
-- Designing visualization algorithms for hierarchical, time-based data  
-- Systems-level thinking across data modeling and visualization  
-
-It serves as a capstone-style example of how biological knowledge, database design, and computational visualization can be unified into a single analytical framework.
+- Translating biological processes into computational models  
+- Integrating SQL-backed data with Python analytics  
+- Algorithmic layout of biological timelines  
+- Visualization of complex, time-dependent molecular behavior  
