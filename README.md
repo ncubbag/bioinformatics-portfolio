@@ -1,6 +1,6 @@
 # Bioinformatics Portfolio
 
-This is a curated collection of programming and data projects completed during my M.S. in Biotechnology with a specialization in Bioinformatics and refined thereafter. 
+This is a curated collection of programming and data projects completed during my M.S. in Biotechnology with a specialization in Bioinformatics and refined thereafter. Together, these projects reflect how biological data is parsed, modeled, structured, and ultimately interpreted through software.
 
 ---
 
@@ -74,4 +74,35 @@ This project demonstrates:
 - Fully normalized relational modeling  
 - Referential integrity and constraint design  
 - Use of views, indexes, sequences, and triggers  
-- Translating domain knowledge into structured data systems
+- Translating domain knowledge into structured data systems  
+
+---
+
+## 4. Ricin Protein Timeline Visualization (Group Project)
+
+A systems-biology visualization project modeling the intracellular trafficking and interactions of the Ricin toxin over time. The project bridges **SQL → SQLite → Python → Plotly**, transforming relational biological data into an interactive timeline where entities move, bind, contain, and persist across time.
+
+This work explores how complex, time-dependent biological processes can be rendered beyond static network diagrams by introducing:
+
+- Temporal structure  
+- Vertical “lanes” based on size and containment  
+- Nested biological entities  
+- Dynamic movement across cellular compartments  
+
+### Key Features
+- Loads entities and relationships from a SQLite database  
+- Computes containment-aware vertical heights for composite entities  
+- Assigns initial Y-axis positions to create clear, non-overlapping lanes  
+- Renders entities as rectangle-like paths in Plotly using scatter traces  
+- Supports:
+  - Moving entities (e.g., trafficking events)
+  - Nonmoving entities (persistent structures)
+  - Nested containment (entities within entities)
+
+This project demonstrates:
+- Translating biological semantics into data structures  
+- Integrating SQL with Python for downstream analysis  
+- Designing visualization algorithms for hierarchical, time-based data  
+- Systems-level thinking across data modeling and visualization  
+
+It serves as a capstone-style example of how biological knowledge, database design, and computational visualization can be unified into a single analytical framework.
