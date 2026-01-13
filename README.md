@@ -1,8 +1,6 @@
 # Bioinformatics Portfolio
 
-A curated collection of programming and data projects completed during my M.S. in Biotechnology
-(Bioinformatics) and refined thereafter. These projects reflect how real-world bioinformatics work is
-built: as small, composable utilities and well-structured data systems.
+This is a curated collection of programming and data projects completed during my M.S. in Biotechnology with a specialization in Bioinformatics and refined thereafter. 
 
 ---
 
